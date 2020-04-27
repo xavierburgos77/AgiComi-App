@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AgeComiApp.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout
+        Padding="50"
+        Margin="0,0,0,0"
+        VerticalOptions="Center">
+        <!-- Place new controls here -->
+
+        <StackLayout
+            Margin="0,0,0,40"
+            Orientation="Horizontal"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Image
+                Source="LogoMenu.png"
+                />
+            <Label
+                Text="AgiComi"
+                FontSize="45"
+                TextColor="Black"
+                FontAttributes="Bold"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"></Label>
+            
+
+        </StackLayout>
+
+        <Button
+            x:Name="btnMenu"
+            Clicked="btnMenu_Clicked"
+            Margin="15,0,15,0"
+            BackgroundColor="Red"
+            TextColor="White"
+            FontAttributes="Bold"
+            Text="Menu"
+            CornerRadius="23"
+            HeightRequest="85"
+            FontSize="30"
+            ImageSource="menu.png"
+            />
+
+
+        <Button
+            x:Name="btnEditar"
+            Clicked="btnEditar_Clicked"
+            Margin="15,30,15,0"
+            BackgroundColor="Red"
+            TextColor="White"
+            FontAttributes="Bold"
+            Text="Editar"
+            CornerRadius="23"
+            HeightRequest="85"
+            FontSize="30"            
+            ImageSource="portfolio.png"/>
+
+    </StackLayout>
+
+</ContentPage>
